@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #06283D;
+    --cor-secundaria: #D6E4E5;
+    --cor-terciaria: #00B4D8;
+    --cor-hover:#0D4C92;
+    --fonte-primaria:'Montserrat', sans-serif;
+    --fonte-secundaria:'Krona One', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+.cabecalho{
+    padding: 2% 0% 0% 15% ;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.cabecalho_menu_link:hover{
+    background-color:var(--cor-hover);
+    transform: scale(1.2);
+}
+
+
+.principal{
+    padding: 15% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+
+.principal_conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+
+}
+
+.foto_rio{
+    width: 50%;
+    height:649x;
+    left: 990px;
+    top: 450px;
+    bottom: 15px;
+    border-radius: 16px;
+}
+
+.principal_conteudo_titulo{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 56px;
+    font-family: var(--fonte-secundaria)
+}
+
+.principal_conteudo_texto{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.principal_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.principal_links_titulo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: var(--fonte-secundaria)
+}
+
+.principal_links_navegacao{
+    display: flex;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    border: 3px outset var(--cor-terciaria);
+    width: 50%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    gap: 12px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.principal_links_navegacao:hover{
+    background-color:var(--cor-hover);
+    transform: scale(1.1);
+}
+
+.rodape {
+    padding: 24px;
+    background-color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+
+
+   /*  anotacoes /* border-style: solid;    Cria uma borda sólida 
+    border-color:red;                         Colore a borda com a cor vermelha 
+        margin: 10%;                     Adiciona uma margem ao redor da section 
+        display: flex;                   Adiciona o display flex
+
+        Padding é responsável por definir a distância entre um conteúdo e suas bordas. No caso do nosso projeto, adicionamos um padding: 21.5px 0, que já foi suficiente para criar um espaço interno mais amplo nos botões. Essa propriedade é extremamente útil pois garante que exista esse espaço de “respiro” entre as bordas e o conteúdo, deixando o visual mais limpo e harmônico.*/
+
+
+@media (max-width: 1200px){
+    .cabecalho { 
+        padding: 10%;
+    }
+
+    .cabecalho_menu { 
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+    }
+
+    .principal_conteudo{
+        width: auto;
+    }
+
+}
